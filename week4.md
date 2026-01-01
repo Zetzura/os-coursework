@@ -1,7 +1,6 @@
 ---
 
 ### 📄 `week4.md`
-*(Copy and paste this exact text)*
 
 ```markdown
 # Week 4 – System Configuration & Hardening
