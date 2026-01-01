@@ -5,7 +5,8 @@ A headless Ubuntu Server 22.04 LTS system was deployed to simulate a real-world 
 
 ## System Information
 Commands used to verify the system:
-```bash
+```
+bash
 uname -a
 lsb_release -a
 free -h
