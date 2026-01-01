@@ -17,3 +17,5 @@ The tools were installed using the package manager:
 ```bash
 sudo apt update
 sudo apt install htop sysstat iperf3 -y
+```
+These tools allow continuous monitoring and performance evaluation.
