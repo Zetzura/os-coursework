@@ -5,8 +5,9 @@
   **Module:** CMPN202 – Operating Systems  
   
   This technical journal documents the design, configuration, security implementation, and performance evaluation of a Linux-based server system. The work demonstrates practical system administration skills, security hardening, and performance testing conducted over seven weeks.
-  
-  ## Contents
+
+## Contents
+
 - [Week 1 – System Planning and Architecture](week1.md)
 - [Week 2 – Security Planning](week2.md)
 - [Week 3 – Application Selection](week3.md)
