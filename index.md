@@ -14,7 +14,3 @@
 - [Week 5 – Advanced Security & Monitoring](week5.md)
 - [Week 6 – Performance Evaluation](week6.md)
 - [Week 7 – Security Audit & Evaluation](week7.md)
-  
-  # Main Title
-  ## Section
-  ### Subsection
