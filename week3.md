@@ -30,15 +30,16 @@ I installed and enabled the OpenSSH server to allow for remote management.
 * **Command:** `sudo apt install openssh-server -y`
 * **Status:** Verified as "active (running)".
 
-[INSERT YOUR week-3-evidence-1.png HERE]
+![SSH Status](images/week-3-evidence-1.png)
 
 ### 2. Remote Access via Port Forwarding
-Because the server is on a NAT network, I configured Port Forwarding (Port 2222 -> 22) to connect via Windows PowerShell.
+Because the server is on a NAT network, I configured Port Forwarding (Port 2222 -> 22) in VirtualBox to connect via Windows PowerShell.
+* **Connection String:** `ssh zetzura@127.0.0.1 -p 2222`
 
-[INSERT YOUR week-3-evidence-3.png HERE]
+![Remote Access Connection](images/week-3-evidence-3.png)
 
 ### 3. Firewall Security (UFW)
-I enabled the Uncomplicated Firewall to block all traffic except for SSH.
+I enabled the Uncomplicated Firewall to block all traffic except for SSH to ensure the server is not exposed to unauthorized access.
 * **Command:** `sudo ufw allow ssh` && `sudo ufw enable`
 
-[INSERT YOUR week-3-evidence-4.png HERE]
+![Firewall Status](images/week-3-evidence-4.png)
