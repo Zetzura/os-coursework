@@ -23,3 +23,13 @@ ip a
 ## Justification
 Ubuntu Server was selected due to its stability, long-term support (LTS), and strong security features.
 
+## System Verification
+The following screenshot confirms the successful installation and configuration of the Ubuntu 24.04 LTS server.
+
+![System Verification Evidence](images/week1-proof.png)
+
+### Verification Observations:
+- **OS:** Ubuntu 24.04.3 LTS (Noble Numbat)
+- **Kernel:** 6.8.0-90-generic
+- **Memory:** 1.9Gi total recognized
+- **Storage:** 25GB root partition
