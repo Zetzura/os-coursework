@@ -14,3 +14,12 @@ free -h
 df -h
 ip a
 ```
+## Architecture
+- **Operating System:** Ubuntu Server 24.04 LTS
+- **Access Method:** SSH (Secure Shell)
+- **Interface:** Command-line only (Headless)
+- **Network:** Private virtual network
+
+## Justification
+Ubuntu Server was selected due to its stability, long-term support (LTS), and strong security features.
+
