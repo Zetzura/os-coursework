@@ -1,30 +1,34 @@
 # Week 2 – Security Planning & User Management
 
 ## 1. Security Strategy
-This week focused on implementing the **Principle of Least Privilege**. By creating a dedicated user for administration and restricting the 'root' account, we reduce the attack surface of the server.
+This week, I implemented the **Principle of Least Privilege**. By creating a dedicated user for administration and restricting 'root' usage, we ensure that the system is more secure against accidental or unauthorized changes.
 
-## 2. Administrative User Creation
-I created a primary user named `zetzura` to handle all system tasks.
+## 2. User Creation & Group Management
+I created a primary administrative account to handle system maintenance.
 
-![Creating the User](./images/week-2-evidence-1.png)
-*Above: Documentation of the user creation process and initial setup.*
+### Tasks Performed:
+- **Created Administrative User:** Set up the `zetzura` account.
+- **Assigned Privileges:** Added the user to the `sudo` group to enable administrative commands.
+- **System Hygiene:** Removed the temporary `manager` account to prevent unnecessary access points.
 
-## 3. Privilege Management (Sudo)
-To perform administrative tasks without logging in as root, the `zetzura` user was added to the **sudo** group.
+## 3. Evidence of Implementation
+Below is the visual documentation of the security steps taken during this phase.
 
-![Sudo Group Verification](./images/week-2-evidence-2.png)
-*Above: Verifying that the user has been granted appropriate administrative permissions.*
+### A. Creating the User
+![User Creation](./images/week-2-evidence-1.png)
+*Creating the 'zetzura' user and setting initial parameters.*
 
-## 4. System Cleanup & Security Hardening
-As part of system hygiene, I audited existing accounts and removed temporary test users that were no longer required.
+### B. Adding to Sudo Group
+![Sudo Verification](./images/week-2-evidence-2.png)
+*Granting 'zetzura' administrative rights via the sudo group.*
 
-![Deleting Test Users](./images/week-2-evidence-3.png)
-*Above: Removing the 'manager' account to secure the user environment.*
+### C. Removing Test Accounts
+![Deleting Manager](./images/week-2-evidence-3.png)
+*Deleting the 'manager' account to secure the system.*
 
-## 5. Final User Audit
-A final check of the `/etc/passwd` file and group assignments confirms that only authorized users have access to the system.
-
-![Final User Check](./images/week-2-evidence-4.png)
+### D. Final User Verification
+![System Audit](./images/week-2-evidence-4.png)
+*Final check confirming 'zetzura' is correctly configured in the system groups.*
 
 ---
 [Back to Home](./index.html)
