@@ -17,7 +17,7 @@ I have allocated the following resources to the Virtual Machine to ensure a bala
 ## 3. System Verification
 The following screenshot confirms the successful installation and initial resource verification of the Ubuntu 24.04 LTS server.
 
-![System Verification](./images/week1-install.png)
+![System Verification](./images/week-1-evidence.png)
 
 ### Verification Observations:
 - **Kernel:** 6.8.0-90-generic
