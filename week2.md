@@ -1,44 +1,30 @@
-# Week 2 – Security Planning
+# Week 2 – Security Planning & User Management
 
-## Threat Model
+## 1. Security Strategy
+This week focused on implementing the **Principle of Least Privilege**. By creating a dedicated user for administration and restricting the 'root' account, we reduce the attack surface of the server.
 
-| Threat | Risk Level | Mitigation |
-|------|-----------|-----------|
-| SSH brute-force | High | SSH keys + Fail2Ban |
-| Unauthorised access | Medium | Firewall |
-| Unpatched software | Medium | Automatic updates |
-| Privilege abuse | Low | sudo restrictions |
+## 2. Administrative User Creation
+I created a primary user named `zetzura` to handle all system tasks.
 
-## Security Strategy
-The system uses layered security including authentication hardening, firewall rules, and automated updates to minimise attack surface.
+![Creating the User](./images/week-2-evidence-1.png)
+*Above: Documentation of the user creation process and initial setup.*
 
-# Week 2: System Administration & User Management
+## 3. Privilege Management (Sudo)
+To perform administrative tasks without logging in as root, the `zetzura` user was added to the **sudo** group.
 
-## Task 1: System Updates and Maintenance
-The first step in securing the server was to ensure all software and security patches were up to date.
-- **Command:** `sudo apt update && sudo apt upgrade -y`
+![Sudo Group Verification](./images/week-2-evidence-2.png)
+*Above: Verifying that the user has been granted appropriate administrative permissions.*
 
-![System Updates](images/week-2-evidence-1.png)
-*Figure 1: Successful completion of system updates.*
+## 4. System Cleanup & Security Hardening
+As part of system hygiene, I audited existing accounts and removed temporary test users that were no longer required.
 
----
+![Deleting Test Users](./images/week-2-evidence-3.png)
+*Above: Removing the 'manager' account to secure the user environment.*
 
-## Task 2: User Management
-I created a new administrative user to demonstrate proper access control and to avoid using the primary account for daily tasks.
-- **New User:** `manager`
-- **Action:** Added the user to the `sudo` group to grant administrative privileges.
+## 5. Final User Audit
+A final check of the `/etc/passwd` file and group assignments confirms that only authorized users have access to the system.
 
-![Creating User](images/week-2-evidence-2.png)
-*Figure 2: Creating the 'manager' account.*
-
-![Verifying Admin Rights](images/week-2-evidence-3.png)
-*Figure 3: Verification that 'manager' has sudo permissions via the 'groups' command.*
+![Final User Check](./images/week-2-evidence-4.png)
 
 ---
-
-## Task 3: Security Audit
-I performed a basic login audit to verify who has accessed the system and ensure the login history is being recorded correctly.
-- **Command:** `last -a`
-
-![System Audit](images/week-2-evidence-4.png)
-*Figure 4: System login history showing an audit trail of user activity.*
+[Back to Home](./index.html)
