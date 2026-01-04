@@ -1,21 +1,28 @@
-# Week 6 – Performance Evaluation
+# Week 6 – Network Configuration & Diagnostics
 
-## Performance Tests
-```
-htop
-vmstat 2
-iostat -x 2
-iperf3 -s
-```
+## 1. Objective
+This week focused on verifying the server's network configuration, testing external connectivity, and auditing active network ports to ensure secure communication.
 
-## Results Summary
+## 2. IP Address Verification
+I used the `ip addr` command to identify the server's network interfaces and verify the assigned IP address within the VirtualBox NAT environment.
+* **Command used:** `ip addr`
 
-| Metric | Result |
-|------|------|
-| CPU Usage | 10–20% |
-| RAM Usage | ~1.2GB |
-| Disk I/O | Stable |
-| Network Speed | ~900 Mbps |
+![IP Configuration](./images/week-6-evidence-1.png)
+*Above: Network interface details showing the loopback address and the primary Ethernet interface (enp0s3).*
 
-## Analysis
-The system performed efficiently with no major bottlenecks observed during testing.
+## 3. Connectivity Testing
+To ensure the server can reach external repositories for updates and software management, I performed a connectivity test using the ICMP protocol.
+* **Command used:** `ping -c 4 google.com`
+
+![Ping Test](./images/week-6-evidence-2.png)
+*Above: Successful ping test showing 0% packet loss and stable response times.*
+
+## 4. Port and Service Audit
+I audited the server's listening ports to confirm that the SSH service is active and available for remote management while ensuring no unnecessary services are exposed.
+* **Command used:** `ss -tuln`
+
+![Active Ports](./images/week-6-evidence-3.png)
+*Above: Socket statistics showing the server is listening on port 22 (SSH) for both IPv4 and IPv6.*
+
+---
+[Back to Home](./index.html)
