@@ -26,7 +26,7 @@ Ubuntu Server was selected due to its stability, long-term support (LTS), and st
 ## System Verification
 The following screenshot confirms the successful installation and configuration of the Ubuntu 24.04 LTS server.
 
-![System Verification Evidence](images/week1-proof.png)
+![System Verification Evidence](images/week-1-evidence.png)
 
 ### Verification Observations:
 - **OS:** Ubuntu 24.04.3 LTS (Noble Numbat)
