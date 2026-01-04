@@ -20,22 +20,25 @@ sudo apt install htop sysstat iperf3 -y
 ```
 These tools allow continuous monitoring and performance evaluation.
 
-# Week 3: Remote Access and Security
+# Week 3 – Remote Access & System Hardening
 
-## Task 1: Installing and Enabling SSH
-I installed the OpenSSH server to allow for remote management.
-- **Command:** `sudo apt install openssh-server -y`
-- **Verification:** Confirmed the service is active and enabled on boot.
+## Technical Implementation
+This week I configured remote access to the server and implemented initial security hardening.
 
-![SSH Status](images/week-3-evidence-1.png)
+### 1. SSH Configuration
+I installed and enabled the OpenSSH server to allow for remote management.
+* **Command:** `sudo apt install openssh-server -y`
+* **Status:** Verified as "active (running)".
 
-## Task 2: Remote Connection
-I configured Port Forwarding in VirtualBox (Port 2222 -> 22) to allow my Windows host to communicate with the VM.
-- **Connection Command:** `ssh zetzura@127.0.0.1 -p 2222`
+[INSERT YOUR week-3-evidence-1.png HERE]
 
-![Remote Login](images/week-3-evidence-3.png)
+### 2. Remote Access via Port Forwarding
+Because the server is on a NAT network, I configured Port Forwarding (Port 2222 -> 22) to connect via Windows PowerShell.
 
-## Task 3: Firewall Configuration
-I enabled the Uncomplicated Firewall (UFW) to secure the server, ensuring only SSH traffic is permitted.
+[INSERT YOUR week-3-evidence-3.png HERE]
 
-![Firewall Status](images/week-3-evidence-4.png)
+### 3. Firewall Security (UFW)
+I enabled the Uncomplicated Firewall to block all traffic except for SSH.
+* **Command:** `sudo ufw allow ssh` && `sudo ufw enable`
+
+[INSERT YOUR week-3-evidence-4.png HERE]
