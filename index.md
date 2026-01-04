@@ -1,17 +1,33 @@
-  # Operating Systems Coursework
-  
-  **Student Name:** Jed Lassman  
-  **Student ID:** A00018889  
-  **Module:** CMPN202 – Operating Systems  
-  
-  This technical journal documents the design, configuration, security implementation, and performance evaluation of a Linux-based server system. The work demonstrates practical system administration skills, security hardening, and performance testing conducted over seven weeks.
-
-## Contents
-
-- [Week 1 – System Planning and Architecture](week1.md)
-- [Week 2 – Security Planning](week2.md)
-- [Week 3 – Application Selection](week3.md)
-- [Week 4 – System Configuration & Hardening](week4.md)
-- [Week 5 – Advanced Security & Monitoring](week5.md)
-- [Week 6 – Performance Evaluation](week6.md)
-- [Week 7 – Security Audit & Evaluation](week7.md)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Coursework Journal - Zetzura</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f4f4f4; }
+        .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1 { color: #333; border-bottom: 2px solid #333; padding-bottom: 10px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 15px 0; padding: 10px; border-left: 5px solid #007bff; background: #f9f9f9; transition: 0.3s; }
+        li:hover { background: #e9ecef; transform: translateX(5px); }
+        a { text-decoration: none; color: #007bff; font-weight: bold; font-size: 1.1em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OS Coursework Portfolio</h1>
+        <p>Welcome to my technical journal documenting the setup and configuration of an Ubuntu 24.04 LTS Server.</p>
+        
+        <h3>Weekly Progress</h3>
+        <ul>
+            <li><a href="week1.html">Week 1 - Installation & Setup</a></li>
+            <li><a href="week2.html">Week 2 - Security & User Management</a></li>
+            <li><a href="week3.html">Week 3 - Remote Access (SSH) & Firewalls</a></li>
+            <li><a href="week4.html">Week 4 - Software & Monitoring</a></li>
+            <li><a href="week5.html">Week 5 - System Logging & Troubleshooting</a></li>
+            <li><a href="week6.html">Week 6 - Network Configuration & Diagnostics</a></li>
+        </ul>
+    </div>
+</body>
+</html>
